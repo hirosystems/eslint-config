@@ -1,0 +1,20 @@
+{
+  "name": "@blockstack/eslint-config",
+  "version": "1.0.0",
+  "description": "A re-usable ESLint config for Blockstack projects",
+  "main": "index.js",
+  "repository": "https://github.com/blockstack/eslint-config",
+  "author": "Hank Stoever",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=5"
+  },
+  "dependencies": {
+    "eslint-plugin-prettier": ">=3",
+    "eslint-import-resolver-typescript": ">=1",
+    "eslint-plugin-import": ">=2",
+    "@blockstack/prettier-config": ">=0",
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0"
+  }
+}

@@ -10,12 +10,13 @@
     "eslint": ">=5"
   },
   "dependencies": {
+    "@blockstack/prettier-config": ">=0",
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
     "eslint-plugin-prettier": ">=3",
     "eslint-import-resolver-typescript": ">=1",
     "eslint-plugin-import": ">=2",
-    "@blockstack/prettier-config": ">=0",
-    "@typescript-eslint/eslint-plugin": "2.23.0",
-    "@typescript-eslint/parser": "2.23.0"
+    "prettier": ">=1"
   },
   "publishConfig": {
     "access": "public"

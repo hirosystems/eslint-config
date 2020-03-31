@@ -9,6 +9,7 @@
   "peerDependencies": {
     "eslint": ">=5"
   },
+  "prettier": "@blockstack/prettier-config",
   "dependencies": {
     "@blockstack/prettier-config": ">=0.0.6",
     "@typescript-eslint/eslint-plugin": "2.26.0",

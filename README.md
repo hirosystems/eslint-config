@@ -14,7 +14,14 @@ Then, create or modify your `.eslintrc.js` file to extend this config:
 
 ~~~js
 module.exports = {
-  extends: "@blockstack"
+  extends: "@blockstack",
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+    ecmaVersion: 2019,
+    sourceType: 'module',
+  },
 }
 ~~~
 

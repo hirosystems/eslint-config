@@ -3,10 +3,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['import', '@typescript-eslint'],
+  plugins: ['import', '@typescript-eslint', 'prettier'],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
@@ -48,6 +47,9 @@ module.exports = {
     'function-paren-newline': 0,
     'no-shadow': 'off',
     'no-use-before-define': 'off',
+
+    // https://github.com/prettier/eslint-plugin-prettier
+    "prettier/prettier": "error",
 
     // TODO: enable when this is fixed https://github.com/benmosher/eslint-plugin-import/issues/1282
     'import/named': 'off',

@@ -1,6 +1,6 @@
 {
   "name": "@blockstack/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A re-usable ESLint config for Blockstack projects",
   "main": "index.js",
   "repository": "https://github.com/blockstack/eslint-config",
@@ -12,15 +12,19 @@
   "prettier": "@blockstack/prettier-config",
   "dependencies": {
     "@blockstack/prettier-config": "0.0.6",
-    "@typescript-eslint/eslint-plugin": "2.26.0",
-    "@typescript-eslint/parser": "2.26.0",
-    "eslint-config-prettier": ">=6.10",
+    "@typescript-eslint/eslint-plugin": "2.33.0",
+    "@typescript-eslint/parser": "2.33.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": ">=6.11.0",
     "eslint-import-resolver-typescript": ">=1",
     "eslint-plugin-import": ">=2.20.2",
-    "eslint-plugin-prettier": ">=3.1",
-    "prettier": ">=2.0.2"
+    "eslint-plugin-prettier": ">=3.1.3",
+    "prettier": ">=2.0.5"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.2"
   }
 }

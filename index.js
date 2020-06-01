@@ -63,6 +63,8 @@ module.exports = {
         readonly: 'array',
       },
     ],
+    '@typescript-eslint/no-non-null-assertion': ['error'],
+
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/class-name-casing': 'off',
@@ -72,7 +74,6 @@ module.exports = {
     '@typescript-eslint/prefer-interface': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off',
 
     // TODO: enable this when reasonable
     '@typescript-eslint/no-explicit-any': 'off',

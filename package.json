@@ -1,17 +1,27 @@
 {
-  "name": "@blockstack/eslint-config",
+  "name": "@stacks/eslint-config",
   "version": "1.0.6",
-  "description": "A re-usable ESLint config for Blockstack projects",
+  "description": "A re-usable ESLint config for Stacks projects",
   "main": "index.js",
   "repository": "https://github.com/blockstack/eslint-config",
-  "author": "Hank Stoever",
+  "author": "@stacks",
+  "contributors": [
+    {
+      "name": "Hank Stoever",
+      "url": "https://www.hankstoever.com"
+    },
+    {
+      "name": "@kyranjamie",
+      "url": "https://kyranjamie.com"
+    }
+  ],
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=5"
   },
-  "prettier": "@blockstack/prettier-config",
+  "prettier": "@stacks/prettier-config",
   "dependencies": {
-    "@blockstack/prettier-config": "0.0.6",
+    "@stacks/prettier-config": "0.0.6",
     "@typescript-eslint/eslint-plugin": "4.9.1",
     "@typescript-eslint/parser": "4.9.1",
     "eslint": "7.15",

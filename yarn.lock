@@ -23,11 +23,6 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@blockstack/prettier-config@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@blockstack/prettier-config/-/prettier-config-0.0.6.tgz#8a41cd378ba061b79770987f2a6ad0c92b64bd72"
-  integrity sha512-ke0MdyblmoUqSJBEutsG8/6G7KAjCB+uOcgZHPJvJr4R+i5yRhT4GSe5nV/wREINuK0jj2GvaA6qlx4PQTKQUA==
-
 "@eslint/eslintrc@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.2.tgz#d01fc791e2fc33e88a29d6f3dc7e93d0cd784b76"
@@ -64,6 +59,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
+
+"@stacks/prettier-config@0.0.6":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@stacks/prettier-config/-/prettier-config-0.0.7.tgz#22525c623fce6a5f1965fd29867df3d791ea7ef5"
+  integrity sha512-fXd5X4SV5GqskCYZxqExZJ7wF5sOggmzFP4Q7ttmR/eXZKar3c9fqEpbrpRZyHUBZv2Nss46MvwTLQk2YlpIeg==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"

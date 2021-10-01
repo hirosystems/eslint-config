@@ -1,4 +1,4 @@
-# @stacks/prettier-config
+# @stacks/eslint-config
 
 A set of ESLint configuration and rules for use in Stacks projects.
 

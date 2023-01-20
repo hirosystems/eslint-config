@@ -5,7 +5,7 @@ module.exports = {
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['import', '@typescript-eslint', 'prettier'],
+  plugins: ['import', '@typescript-eslint', 'prettier', 'unused-imports'],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
@@ -80,5 +80,6 @@ module.exports = {
 
     // TODO: enable this when reasonable
     '@typescript-eslint/promise-function-async': 'off',
+    'unused-imports/no-unused-imports': 'error',
   },
 };

@@ -5,6 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/blockstack/eslint-config",
   "author": "@stacks",
+  "prettier": "@stacks/prettier-config",
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -25,19 +29,53 @@
     "eslint-plugin-prettier": ">=5",
     "eslint-plugin-unused-imports": ">=3"
   },
-  "prettier": "@stacks/prettier-config",
   "dependencies": {
     "@stacks/prettier-config": "^0.0.10",
-    "@typescript-eslint/eslint-plugin": "^6.3.0",
-    "@typescript-eslint/parser": "^6.3.0",
-    "eslint": "^8.46.0",
+    "@typescript-eslint/eslint-plugin": ">=6",
+    "@typescript-eslint/parser": ">=6",
+    "eslint": ">=8",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-import-resolver-typescript": "^3.6.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-unused-imports": "^3.0.0"
+    "eslint-import-resolver-typescript": ">=3",
+    "eslint-plugin-import": ">=2",
+    "eslint-plugin-prettier": ">=5",
+    "eslint-plugin-unused-imports": ">=3"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^21.0.7",
     "typescript": "^5.1.6"
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "develop",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true
+        }
+      ],
+      "@semantic-release/github",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json",
+            "yarn.lock"
+          ],
+          "message": "chore(release docs): ${nextRelease.version}\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
   }
 }

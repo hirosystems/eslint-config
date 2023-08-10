@@ -7,9 +7,7 @@ on:
       - '**/package*.json'
       - '**/yarn.lock'
 
-    branches:
-      - main
-      - develop
+    branches: [main]
 
   workflow_dispatch:
 
@@ -26,14 +24,13 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    needs: [pre_run]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
-
-      - name: Semantic Release
+      - name: Semantic release
         uses: cycjimmy/semantic-release-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

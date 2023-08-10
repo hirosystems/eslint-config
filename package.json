@@ -1,6 +1,6 @@
 {
   "name": "@stacks/eslint-config",
-  "version": "1.3.0",
+  "version": "1.0.0",
   "description": "A re-usable ESLint config for Stacks projects",
   "main": "index.js",
   "repository": "https://github.com/blockstack/eslint-config",

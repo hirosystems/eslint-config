@@ -73,7 +73,7 @@
             "package-lock.json",
             "yarn.lock"
           ],
-          "message": "chore(release docs): ${nextRelease.version}\n\n${nextRelease.notes}"
+          "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
         }
       ]
     ]

@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/blockstack/eslint-config/compare/v1.0.0...v2.0.0) (2023-08-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* manually update to v2 for semantic release
+
+### Features
+
+* manually update to v2 for semantic release ([44f329f](https://github.com/blockstack/eslint-config/commit/44f329f000b411de3f4a02ce3bf55e62f7c3fd08))
+
 # 1.0.0 (2023-08-10)
 
 

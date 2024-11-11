@@ -5,7 +5,6 @@ on:
     paths-ignore:
       - '**/CHANGELOG.md'
       - '**/package*.json'
-      - '**/yarn.lock'
 
     branches: [main, develop]
 
@@ -29,7 +28,9 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v3
-      - run: yarn install --frozen-lockfile
+        with:
+          cache: npm
+      - run: npm ci
       - uses: cycjimmy/semantic-release-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

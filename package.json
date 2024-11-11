@@ -82,8 +82,7 @@
           "assets": [
             "CHANGELOG.md",
             "package.json",
-            "package-lock.json",
-            "yarn.lock"
+            "package-lock.json"
           ],
           "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
         }

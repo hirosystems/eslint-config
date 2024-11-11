@@ -5,9 +5,9 @@ A set of ESLint configuration and rules for use in Stacks projects.
 ## Installation
 
 ```bash
-yarn add --dev eslint @stacks/eslint-config
-# or, with npm
-npm install --save-dev eslint @stacks/eslint-config
+npm install --save-dev @stacks/eslint-config
+# or, with yarn
+yarn add --dev @stacks/eslint-config
 ```
 
 Then, create or modify your `.eslintrc.js` file to extend this config:

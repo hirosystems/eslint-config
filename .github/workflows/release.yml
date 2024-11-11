@@ -29,9 +29,10 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v3
         with:
+          node-version: 20
           cache: npm
       - run: npm ci
-      - uses: cycjimmy/semantic-release-action@v3
+      - uses: cycjimmy/semantic-release-action@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

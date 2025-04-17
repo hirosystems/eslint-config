@@ -1,6 +1,6 @@
 {
   "name": "@stacks/eslint-config",
-  "version": "3.0.0-develop.1",
+  "version": "3.0.0-develop.2",
   "description": "A re-usable ESLint config for Stacks projects",
   "repository": "https://github.com/hirosystems/eslint-config",
   "author": "@stacks",

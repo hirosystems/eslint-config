@@ -1,3 +1,13 @@
+## [3.0.0-develop.2](https://github.com/hirosystems/eslint-config/compare/v3.0.0-develop.1...v3.0.0-develop.2) (2025-04-17)
+
+### Features
+
+* pls prerelease semantic uwu ([f71dc2c](https://github.com/hirosystems/eslint-config/commit/f71dc2c715bea6a2342dafaf1be7b51559aebac1))
+
+### Bug Fixes
+
+* add missing deps ([996bee2](https://github.com/hirosystems/eslint-config/commit/996bee23c11e48b8b288c2d932f51bedc7d31563))
+
 ## [3.0.0-develop.1](https://github.com/hirosystems/eslint-config/compare/v2.0.0...v3.0.0-develop.1) (2024-11-11)
 
 ### ⚠ BREAKING CHANGES

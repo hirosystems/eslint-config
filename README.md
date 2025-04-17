@@ -1,31 +1,27 @@
 # @stacks/eslint-config
 
-A set of ESLint configuration and rules for use in Stacks projects.
+A shareable ESLint configuration for Stacks projects, now supporting the new [ESLint flat config format](https://eslint.org/docs/latest/use/getting-started). This config is designed for use with ESLint v9+ and the new `eslint.config.js`/`eslint.config.mjs` file format.
 
 ## Installation
 
 ```bash
-npm install --save-dev @stacks/eslint-config
-# or, with yarn
-yarn add --dev @stacks/eslint-config
+npm install --save-dev eslint @stacks/eslint-config
+yarn add --dev eslint @stacks/eslint-config
+pnpm add --dev eslint @stacks/eslint-config
 ```
 
-Then, create or modify your `.eslintrc.js` file to extend this config:
+## Usage
+
+1. **Create an `eslint.config.js` (or `eslint.config.mjs`) file in your project root:**
 
 ```js
-module.exports = {
-  extends: '@stacks/eslint-config',
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-    ecmaVersion: 2019,
-    sourceType: 'module',
-  },
-};
+// eslint.config.js
+import stacks from '@stacks/eslint-config';
+
+export default [...stacks];
 ```
 
-Finally, modify your `package.json` file to use our prettier config, which is already installed as a dependency of this package.
+2. **(Optional) Add Prettier config to your `package.json`:**
 
 ```json
 {
@@ -33,15 +29,44 @@ Finally, modify your `package.json` file to use our prettier config, which is al
 }
 ```
 
-## Overriding rules
+3. **Run ESLint:**
 
-This configuration includes a bunch of rules that have become standard in our JavaScript projects. However, if you feel the need to override a rule, you can always do so by simply adding `rules` to your `.eslintrc.js` file.
+```bash
+npx eslint .
+```
+
+## Overriding Rules
+
+You can override or add rules in your `eslint.config.js` by adding additional config objects to the exported array:
 
 ```js
-module.exports = {
-  extends: ['@stacks/eslint-config'],
-  rules: {
-    '@typescript-eslint/no-use-before-define': [2],
+export default [
+  ...stacks,
+  {
+    files: ['**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-use-before-define': 'warn',
+    },
   },
-};
+];
 ```
+
+---
+
+## Migration from eslintrc to Flat Config
+
+Run the following command to migrate your project (and then add `...stacks` to the exported array manually):
+
+```bash
+npx  @eslint/migrate-config .eslintrc.json
+yarn dlx @eslint/migrate-config .eslintrc.json
+pnpm dlx @eslint/migrate-config .eslintrc.json
+```
+
+---
+
+## References
+
+- [ESLint: Getting Started](https://eslint.org/docs/latest/use/getting-started)
+- [ESLint: Shareable Configs](https://eslint.org/docs/latest/extend/shareable-configs)
+- [ESLint: Migration Guide](https://eslint.org/docs/latest/use/configure/migration-guide)

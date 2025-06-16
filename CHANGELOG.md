@@ -1,3 +1,9 @@
+## [3.0.0-develop.3](https://github.com/hirosystems/eslint-config/compare/v3.0.0-develop.2...v3.0.0-develop.3) (2025-06-16)
+
+### Features
+
+* switch to typescript ([8f98dbe](https://github.com/hirosystems/eslint-config/commit/8f98dbe2655b9e083c353e58baa4ecd06cf80028))
+
 ## [3.0.0-develop.2](https://github.com/hirosystems/eslint-config/compare/v3.0.0-develop.1...v3.0.0-develop.2) (2025-04-17)
 
 ### Features

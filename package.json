@@ -1,16 +1,25 @@
 {
   "name": "@stacks/eslint-config",
-  "version": "2.0.0",
+  "version": "3.0.0-develop.3",
   "description": "A re-usable ESLint config for Stacks projects",
-  "main": "index.js",
-  "repository": "https://github.com/blockstack/eslint-config",
+  "repository": "https://github.com/hirosystems/eslint-config",
   "author": "@stacks",
   "prettier": "@stacks/prettier-config",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
-    "index.js"
+    "dist"
   ],
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "prepublishOnly": "npm run build"
   },
   "contributors": [
     {
@@ -23,29 +32,20 @@
     }
   ],
   "license": "MIT",
-  "peerDependencies": {
-    "eslint": ">=8",
-    "eslint-plugin-import": ">=2",
-    "eslint-plugin-prettier": ">=5",
-    "eslint-plugin-unused-imports": ">=3"
-  },
   "dependencies": {
+    "@eslint/js": ">= 9",
     "@stacks/prettier-config": "^0.0.10",
-    "@typescript-eslint/eslint-plugin": ">=6",
-    "@typescript-eslint/parser": ">=6",
-    "eslint": ">=8",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-import-resolver-typescript": ">=3",
-    "eslint-plugin-import": ">=2",
-    "eslint-plugin-prettier": ">=5",
-    "eslint-plugin-unused-imports": ">=3"
+    "eslint-config-prettier": ">=10",
+    "eslint-plugin-prettier": ">= 5",
+    "typescript-eslint": ">= 8"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^6.1.0",
-    "semantic-release": "^21.0.7",
-    "typescript": "^5.1.6"
+    "conventional-changelog-conventionalcommits": "^9.0.0",
+    "semantic-release": "^24.2.5",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
   },
   "release": {
     "branches": [
@@ -82,8 +82,7 @@
           "assets": [
             "CHANGELOG.md",
             "package.json",
-            "package-lock.json",
-            "yarn.lock"
+            "package-lock.json"
           ],
           "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
         }

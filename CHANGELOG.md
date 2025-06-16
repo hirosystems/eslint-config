@@ -1,3 +1,29 @@
+## [3.0.0-develop.3](https://github.com/hirosystems/eslint-config/compare/v3.0.0-develop.2...v3.0.0-develop.3) (2025-06-16)
+
+### Features
+
+* switch to typescript ([8f98dbe](https://github.com/hirosystems/eslint-config/commit/8f98dbe2655b9e083c353e58baa4ecd06cf80028))
+
+## [3.0.0-develop.2](https://github.com/hirosystems/eslint-config/compare/v3.0.0-develop.1...v3.0.0-develop.2) (2025-04-17)
+
+### Features
+
+* pls prerelease semantic uwu ([f71dc2c](https://github.com/hirosystems/eslint-config/commit/f71dc2c715bea6a2342dafaf1be7b51559aebac1))
+
+### Bug Fixes
+
+* add missing deps ([996bee2](https://github.com/hirosystems/eslint-config/commit/996bee23c11e48b8b288c2d932f51bedc7d31563))
+
+## [3.0.0-develop.1](https://github.com/hirosystems/eslint-config/compare/v2.0.0...v3.0.0-develop.1) (2024-11-11)
+
+### ⚠ BREAKING CHANGES
+
+* switch to latest eslint
+
+### Bug Fixes
+
+* switch to latest eslint ([ab09dd9](https://github.com/hirosystems/eslint-config/commit/ab09dd92acf3f8be5782c2d078ab2f3ad8fac232))
+
 ## [2.0.0](https://github.com/blockstack/eslint-config/compare/v1.0.0...v2.0.0) (2023-08-14)
 
 

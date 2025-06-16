@@ -23,13 +23,15 @@ export default [...stacks];
 
 2. **(Optional) Add Prettier config to your `package.json`:**
 
+> The `@stacks/prettier-config` package is included as a dependency of `@stacks/eslint-config`, so you don't need to install it separately.
+
 ```json
 {
   "prettier": "@stacks/prettier-config"
 }
 ```
 
-3. **Run ESLint:**
+1. **Run ESLint:**
 
 ```bash
 npx eslint .

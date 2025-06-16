@@ -5,6 +5,7 @@
   "repository": "https://github.com/hirosystems/eslint-config",
   "author": "@stacks",
   "prettier": "@stacks/prettier-config",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {

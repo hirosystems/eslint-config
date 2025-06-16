@@ -33,16 +33,16 @@
   "dependencies": {
     "@eslint/js": ">= 9",
     "@stacks/prettier-config": "^0.0.10",
-    "eslint-config-prettier": ">= 9",
+    "eslint-config-prettier": ">=10",
     "eslint-plugin-prettier": ">= 5",
     "typescript-eslint": ">= 8"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^8.0.0",
-    "semantic-release": "^24.2.0",
-    "typescript": "^5.6.3"
+    "conventional-changelog-conventionalcommits": "^9.0.0",
+    "semantic-release": "^24.2.5",
+    "typescript": "^5.8.3"
   },
   "release": {
     "branches": [
